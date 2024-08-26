@@ -1,5 +1,6 @@
 import Image from "next/image";
 import logo from "@/assets/logo.jpg";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -14,9 +15,9 @@ export default function Navbar() {
           <h3 className="text-white mx-4 my-2">Fish School Nepal</h3>
         </div>
         <ul className="flex flex-row w-72 p-2 justify-between text-white">
-          <li>Home</li>
-          <li>About</li>
-          <li>contact</li>
+          <Link href="/">Home</Link>
+          <Link href="/about">About</Link>
+          <Link href="/contact">Contact</Link>
         </ul>
       </div>
     </>
