@@ -9,6 +9,7 @@ import monster from "@/assets/cardImage/monster.png";
 import plant from "@/assets/cardImage/plant.png";
 import gold from "@/assets/cardImage/gold.png";
 import Link from "next/link";
+import Map from "@/components/Map";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
             Different types of plants,fishes and accessories available
           </p>
           <Link href="/contact">
-            <button className="mx-72 my-12 bg-teal-700 text-white p-3 rounded-lg">
+            <button className="mx-72 my-12 object-contain bg-teal-700 text-white p-3 rounded-lg">
               Contact us
             </button>
           </Link>
@@ -80,6 +81,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Map />
     </>
   );
 }
