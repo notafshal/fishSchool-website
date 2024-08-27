@@ -1,5 +1,5 @@
 import Image from "next/image";
-import mainpic from "@/assets/mainpic.jpg";
+
 import logo from "@/assets/logo.jpg";
 import tank from "@/assets/cardImage/tank.png";
 import Card from "@/components/Card";
@@ -14,28 +14,32 @@ import Map from "@/components/Map";
 export default function Home() {
   return (
     <>
-      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-row">
-        <div className="flex flex-row">
-          <Image className="rounded-full w-72 h-72" src={logo} alt="logo" />
+      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-row ">
+        <div className="flex flex-row ">
+          <Image
+            className="rounded-full w-72 h-72 sm:hidden lg:block "
+            src={logo}
+            alt="logo"
+          />
         </div>
-        <div>
-          <h2 className="text-teal-700 text-7xl mx-72 font-bold">
+        <div className="md:mx-1 ">
+          <h2 className=" text-teal-700 text-7xl  lg:mx-72 md:text-left font-bold">
             Bring <br />
             Nature Home
           </h2>
-          <p className="text-teal-700 mt-2 mx-72">
+          <p className="text-teal-700 mt-2 sm:text-center lg:mx-72">
             Different types of plants,fishes and accessories available
           </p>
           <Link href="/contact">
-            <button className="mx-72 my-12 object-contain bg-teal-700 text-white p-3 rounded-lg">
+            <button className="lg:mx-72 my-12 object-contain bg-teal-700 text-white p-3 rounded-lg">
               Contact us
             </button>
           </Link>
         </div>
       </div>
       <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-col">
-        <div className="text-2xl text-teal-700 font-semibold mx-auto ">
-          What can you find in Our Store?
+        <div className="text-2xl text-teal-700 font-semibold mx-auto md:text-center">
+          <p className="md:text-center"> What can you find in Our Store?</p>
         </div>
         <div className="flex flex-row justify-around">
           <Card

@@ -5,15 +5,15 @@ import about from "@/assets/aboutmain.jpg";
 export default function About() {
   return (
     <>
-      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-row">
+      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex lg:flex-row lg:justify-evenly md:flex-col md:justify-center">
         <div className="w-1/2">
-          <Image src={about} alt="mainabout" className="rounded-lg " />
+          <Image src={about} alt="mainabout" className="rounded-lg md:mx-32" />
         </div>
-        <div className="w-1/2 flex  flex-col justify-center">
+        <div className="w-1/2 flex  flex-col justify-center md:mx-32">
           <h2 className="text-center font-semibold text-teal-700 my-2">
             WHO ARE WE?
           </h2>
-          <p className="font-light">
+          <p className="font-light  lg-px:10">
             Fish School Nepal is a specialized fish store in Kirtipur,
             Kathmandu, offering a wide selection of freshwater fish for aquarium
             enthusiasts. The store caters to both aggressive and peaceful
@@ -36,9 +36,9 @@ export default function About() {
             Our Achievements
           </h1>
         </div>
-        <div className="flex flex-row font-normal mt-3 ">
+        <div className="flex flex-row lg:flex-row md:flex-col font-normal mt-3 ">
           <Image
-            className=" w-52 mx-5 cursor-pointer rounded-lg"
+            className=" w-52 mx-5 cursor-pointer rounded-lg md:mx-32"
             src={gallery1}
             alt="gallery1"
           />

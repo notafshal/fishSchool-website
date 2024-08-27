@@ -36,7 +36,7 @@ export default function Contact() {
           {" "}
           Let&apos;s Have a conversation{" "}
         </h2>
-        <div className="flex flex-row justify-evenly ">
+        <div className="flex flex-row  justify-evenly ">
           <div>
             <p className="text-center my-4 text-white bg-red-500 rounded-lg">
               {error}
@@ -80,7 +80,7 @@ export default function Contact() {
             <Image
               src={contact}
               alt="contact photo"
-              className="h-96 w-96 rounded-full"
+              className="h-96 w-96 rounded-full md:hidden lg:block"
             />
           </div>
         </div>
