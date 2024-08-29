@@ -13,7 +13,9 @@ export default function Navbar() {
               src={logo}
               alt="Fishschool logo"
             />
-            <h3 className="text-white mx-4 my-2">Fish School Nepal</h3>
+            <h3 className="hidden md:block text-white mx-4 my-2">
+              Fish School Nepal
+            </h3>
           </div>
         </Link>
         <ul className="flex flex-row w-72 p-2 justify-between text-white">

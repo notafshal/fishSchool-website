@@ -5,15 +5,19 @@ import about from "@/assets/aboutmain.jpg";
 export default function About() {
   return (
     <>
-      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex lg:flex-row lg:justify-evenly md:flex-col md:justify-center">
-        <div className="w-1/2">
-          <Image src={about} alt="mainabout" className="rounded-lg md:mx-32" />
+      <div className="mx-8 my-8  bg-slate-100 p-5 rounded-lg flex lg:flex-row lg:justify-evenly md:flex-col md:justify-center">
+        <div className=" md:w-1/2">
+          <Image
+            src={about}
+            alt="mainabout"
+            className="rounded-lg mx-18 hidden md:block "
+          />
         </div>
-        <div className="w-1/2 flex  flex-col justify-center md:mx-32">
-          <h2 className="text-center font-semibold text-teal-700 my-2">
+        <div className="w-1/2 flex  flex-col justify-start md:justify-center md:mx-32">
+          <h2 className="text-start md:text-center font-semibold text-teal-700 my-2">
             WHO ARE WE?
           </h2>
-          <p className="font-light  lg-px:10">
+          <p className="font-extralight ">
             Fish School Nepal is a specialized fish store in Kirtipur,
             Kathmandu, offering a wide selection of freshwater fish for aquarium
             enthusiasts. The store caters to both aggressive and peaceful
@@ -30,19 +34,19 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-col">
+      <div className="md:mx-8 my-8 py-2 bg-slate-100 md:p-5 rounded-lg flex flex-col">
         <div>
           <h1 className="text-center font-semibold text-teal-700 mx-auto">
             Our Achievements
           </h1>
         </div>
-        <div className="flex flex-row lg:flex-row md:flex-col font-normal mt-3 ">
+        <div className="flex  md:flex-row flex-col font-normal mt-3 ">
           <Image
-            className=" w-52 mx-5 cursor-pointer rounded-lg md:mx-32"
+            className=" h-2S w-52 mx-5 cursor-pointer rounded-lg hidden md:block "
             src={gallery1}
             alt="gallery1"
           />
-          <p className="mx-5 font-light px-28  ">
+          <p className="mx-5 font-extralight  px-28 md:px-2 md:mx-0 text-sm md:text-base text-start ">
             Fish School Nepal, a leading ornamental fish retailer in Nepal, has
             secured second place in the Betta competition, specifically in the
             Plakat variety category. The Plakat Betta, known for its robust

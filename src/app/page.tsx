@@ -17,7 +17,7 @@ export default function Home() {
       <div className="mx-8 my-8 bg-slate-100 p-5 rounded-lg flex flex-row ">
         <div className="flex flex-row ">
           <Image
-            className="rounded-full w-72 h-72 sm:hidden lg:block "
+            className="rounded-full w-72 h-72 hidden md:block "
             src={logo}
             alt="logo"
           />

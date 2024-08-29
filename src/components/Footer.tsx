@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="bg-gray-400 w-dvw h-8">
+      <div className="bg-gray-400 w-dvw h-11 md:h-8">
         <p className="text-center">
           Copyright @notafshal. All right reserved to Afshal Maharjan
         </p>
